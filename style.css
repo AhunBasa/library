@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-broWn: rgba(220, 154, 137, 0.711);
+  --color-font: rgb(85, 47, 37);
+  --color-white: rgb(232, 226, 222);
+  --color-green: rgb(102, 128, 0);
+  --color-red: #c83737;
+  --font-book: 'Playfair Display', serif;
+  --font-library: 'Space Mono', monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: var(--font-library);
+  color: var(--color-font);
+  background-color: var(--color-broWn);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px calc(50px + 10vw);
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;  
+}
+
+.logo {width: 90px;}
+
+.addBookButton {
+  width: 60px;
+}
+
+main {
+  padding: 30px;
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  gap: 30px;
+
+}
+
+.book {
+  height: 300px;
+  width: 230px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: var(--color-white);
+  font-family: var(--font-book);
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.book div {
+  /* padding: max(10px) */
+}
+
+.book img {
+  width: 20px;
+  align-self: end;
+}
+
+.newBookInput {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(245, 245, 220, 0.394);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  width: 370px;
+  background-color: var(--color-white);
+  border-radius: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  box-shadow: 0 0 5px 5px rgba(128, 128, 128, 0.241); 
+}
+
+.deleteForm {
+  align-self: flex-end;
+  margin-right: 8px;
+}
+
+label {
+  display: block;
+}
+
+input {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 7px;
+  margin-top: 5px;
+  font-size: 1.5rem;
+  color: var(--color-font);
+  border: 1px solid var(--color-broWn);
+}
+
+label[for="read"] {
+ 
+  margin: auto;
+}
+
+.readInput {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#read {
+  /* appearance: none; */
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  margin-right: 20px;
+}
+
+.submit {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--color-broWn);
+  font-size: 1rem;
+  color: var(--color-font);
+}
+
+.yesRead {
+  color: var(--color-green);
+}
+
+.notRead {
+  color: var(--color-red);
+}

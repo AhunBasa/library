@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="./script.js" defer></script>
+ <link rel="stylesheet" href="./style.css">
+  <title>Library</title>
+</head>
+<body>
+  <header>
+    <p><img src="./images/g2331.svg" alt="" class="logo"> Library</p>
+    <img src="./images/plus.svg" alt="Green cross" class="addBookButton">
+  </header>
+  <main>
+    
+  </main>
+      <form action="">
+        <img src="./images/cross.svg" alt="Read cross" class="deleteForm">
+        <div class="">
+          <label for="title">Enter title<span>*</span></label>
+          <input type="text" id="title" required>
+        </div>
+        <div class="">
+          <label for="author">Author</label>
+          <input type="text" id="author" required>
+        </div>
+        <div class="">
+          <label for="pages">Number of pages</label>
+          <input type="tel" id="pages" min="1" required>
+        </div>
+        <div class="readInput">
+          <label for="read">I have read this book</label>
+          <input type="checkbox" name="read" id="read" value="" checked="">
+        </div>
+        <button type="submit" class="submit">Submit</button>
+      </form>
+
+</body>
+</html>
